@@ -5,15 +5,39 @@ const About = () => {
     <div className="about-section" id="about">
       <div className="about-me">
         <h3 className="title">About Me</h3>
-        <p className="para">
-          I am a B.Tech Information Technology student with a strong interest in
-          web development and modern technologies. I enjoy building web
-          applications, exploring new tools, and improving my programming
-          skills. My focus is on creating clean, responsive, and user-friendly
-          websites. I have experience working with technologies like HTML, CSS,
-          JavaScript, React, and Firebase. I also use AI tools to improve
-          productivity and speed up development.
-        </p>
+        <div className="about-content">
+          <p className="para about-intro">
+            A B.Tech IT student who loves turning ideas into real, working web
+            applications. I focus on building clean, responsive, and
+            user-friendly digital experiences.
+          </p>
+          <div className="about-highlights">
+            <div className="about-highlight-item">
+              <span className="highlight-icon">⚡</span>
+              <span>Passionate about modern web technologies</span>
+            </div>
+            <div className="about-highlight-item">
+              <span className="highlight-icon">🎯</span>
+              <span>Focused on clean, responsive UI/UX</span>
+            </div>
+            <div className="about-highlight-item">
+              <span className="highlight-icon">🤖</span>
+              <span>Leveraging AI tools for faster development</span>
+            </div>
+          </div>
+          <div className="about-tech">
+            <span className="about-tech-label">TECH I WORK WITH</span>
+            <div className="about-tech-tags">
+              {["React", "JavaScript", "TypeScript", "Firebase", "HTML/CSS", "Node.js", "Git", "AI Tools"].map(
+                (tech) => (
+                  <span className="about-tag" key={tech}>
+                    {tech}
+                  </span>
+                )
+              )}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

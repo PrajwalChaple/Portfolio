@@ -2,12 +2,12 @@
   position: fixed;
   width: 100vw;
   height: var(--vh);
-  /* background-image: linear-gradient(#cbb1ff, #d8c4ff); */
   background-color: #e0f2f1;
   z-index: 999999999;
   display: flex;
   place-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .loading-button {
@@ -316,10 +316,11 @@
   left: 0;
   width: 100%;
   transform: translateY(-50%);
-  color: var(--backgroundColor);
-  font-size: 60px;
+  color: rgba(10, 14, 23, 0.15);
+  font-size: 70px;
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .loading-marquee span {
@@ -388,7 +389,7 @@
   }
 
   .loading-marquee {
-    font-size: 100px;
+    font-size: 120px;
   }
 }
 

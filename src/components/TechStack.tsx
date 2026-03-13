@@ -14,11 +14,11 @@ import {
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
   "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/node2.webp",
-  "/images/express.webp",
-  "/images/mongo.webp",
-  "/images/mysql.webp",
+  "/images/vite.webp",
+  "/images/firebase.webp",
+  "/images/tailwind.webp",
+  "/images/html5.webp",
+  "/images/css3.webp",
   "/images/typescript.webp",
   "/images/javascript.webp",
 ];
@@ -26,7 +26,7 @@ const textures = imageUrls.map((url) => textureLoader.load(url));
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 
-const spheres = [...Array(30)].map(() => ({
+const spheres = [...Array(12)].map(() => ({
   scale: [0.7, 1, 0.8, 1, 1][Math.floor(Math.random() * 5)],
 }));
 
