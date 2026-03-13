@@ -10,7 +10,7 @@ const projects = [
     description:
       "A full-stack academic management app for students — track assignments, upload notes, sync with Google Calendar, and chat with an AI-powered 3D buddy. Built to solve real student problems like missed deadlines and scattered resources.",
     tools: "React, Firebase, Cloudinary, Gemini AI, Google Calendar API",
-    image: "/images/Learngrid.png",
+    image: "",
     link: "https://www.learngrid.online/",
   },
   {
@@ -19,7 +19,7 @@ const projects = [
     description:
       "An advanced AI-powered Applicant Tracking System that uses LLMs for semantic resume analysis. Provides explainable insights including skill matching, gap analysis, and evidence extraction — helping recruiters find the right candidates faster.",
     tools: "React, TypeScript, Tailwind CSS, Firebase, Gemini AI, Groq API",
-    image: "/images/HireFilter.png",
+    image: "",
     link: "https://hirefilter.vercel.app/",
   },
 ];
@@ -113,9 +113,11 @@ const Work = () => {
                         </a>
                       </div>
                     </div>
-                    <div className="carousel-image-wrapper">
-                      <WorkImage image={project.image} alt={project.title} />
-                    </div>
+                    {project.image && (
+                      <div className="carousel-image-wrapper">
+                        <WorkImage image={project.image} alt={project.title} />
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
